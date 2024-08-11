@@ -8,7 +8,7 @@ import noteRoutes from "./routes/notes.routes";
 import authRoutes from "./routes/auth.routes";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(cookieParser()); // Tambahkan ini untuk mengelola cookies

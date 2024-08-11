@@ -8,16 +8,16 @@ Content-Type: application/json
 }
 
 ### get notes
-GET http://localhost:3000/api/v1/notes
+GET http://localhost:8000/api/v1/notes
 
 
 ### update notes by id
-PUT http://localhost:3000/api/v1/notes/66b5b20a47aef26f53a27817
+PUT http://localhost:8000/api/v1/notes/66b5b20a47aef26f53a27817
 Content-Type: application/json
 
 {
-  "title": "Updated Note Title",
-  "content": "This is updated content.",
+  "title": "Kuda Troya: Strategi di Balik Penipuan",
+  "content": "Dalam mitos kuno Yunani, Kuda Troya adalah strategi cerdas yang digunakan oleh pasukan Yunani untuk menembus pertahanan kota Troya, yang telah mereka kepung selama sepuluh tahun. Para pahlawan Yunani, setelah gagal menembus tembok kota, membangun sebuah kuda kayu raksasa yang berongga dan menempatkan sekelompok prajurit di dalamnya. Mereka kemudian meninggalkan kuda itu di luar gerbang Troya sebagai hadiah dan menarik diri seolah-olah telah menyerah. Warga Troya, percaya bahwa kemenangan telah diraih dan kuda itu adalah simbol kemenangan, membawa kuda itu ke dalam kota. Malam harinya, para prajurit yang tersembunyi di dalam kuda keluar, membuka gerbang kota untuk pasukan Yunani yang telah kembali, dan akhirnya menghancurkan Troya dari dalam. Strategi ini terkenal sebagai contoh dari taktik penyusupan dan penipuan dalam perang.",
   "author": "Singgih Septian Nugraha"
 }
 

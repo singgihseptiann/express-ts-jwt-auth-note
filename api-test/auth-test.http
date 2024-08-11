@@ -1,22 +1,22 @@
-POST http://localhost:3000/api/v1/auth/register
+POST http://localhost:8000/api/v1/auth/register
 Content-Type: application/json
 
 {
-  "name": "Dena",
-  "email": "dena@gmail.com",
+  "name": "saitama",
+  "email": "saitama@gmail.com",
   "password": "password123"
 }
 
 ### post login
-POST http://localhost:3000/api/v1/auth/login
+POST http://localhost:8000/api/v1/auth/login
 Content-Type: application/json
 
 {
-  "email": "singgih@gmail.com",
+  "email": "saitama@gmail.com",
   "password": "password123"
 }
 ### post login
-POST http://localhost:3000/api/v1/auth/login
+POST http://localhost:8000/api/v1/auth/login
 Content-Type: application/json
 
 {
