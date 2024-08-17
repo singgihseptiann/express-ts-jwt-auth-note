@@ -1,10 +1,10 @@
-POST http://localhost:3000/api/v1/notes
+POST http://localhost:8000/api/v1/notes
 Content-Type: application/json
 
 {
   "title": "Sample Note",
   "content": "This is a sample note content.",
-  "author": "Dena"
+  "author": "Meliodas"
 }
 
 ### get notes
@@ -22,4 +22,14 @@ Content-Type: application/json
 }
 
 ### delete notes by id
-DELETE http://localhost:3000/api/v1/notes/66b59a9547aef26f53a27804
+DELETE http://localhost:8000/api/v1/notes/66b9f800fc407555e7155f8d
+
+### Add a New Note
+POST http://27.112.78.205:8000/api/v1/notes
+Content-Type: application/json
+
+{
+  "title": "My New Note",
+  "content": "This is the content of my new note."
+}
+

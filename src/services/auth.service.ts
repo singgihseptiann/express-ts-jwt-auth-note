@@ -59,6 +59,18 @@ const authService = {
       throw new Error(`Error logging in: ${error}`);
     }
   },
+  getUser: async (id: string) => {
+    try {
+      const user = await authRepository.findUserById(id);
+      if (!user) {
+        throw new Error("User not found");
+      }
+      return user;
+    } catch (error) {
+      console.error(`Error getting user: ${error}`);
+      throw new Error(`Error getting user: ${error}`);
+    }
+  },
 };
 
 export default authService;

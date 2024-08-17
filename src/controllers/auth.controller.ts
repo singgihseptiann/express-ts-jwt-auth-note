@@ -21,6 +21,16 @@ const authController = {
       res.status(500).json({ message: error });
     }
   },
+
+  getUserController: async (req: Request, res: Response) => {
+    try {
+      const userId = req.params.id; // Ambil ID dari parameter URL
+      const user = await authService.getUser(userId);
+      res.status(200).json(user);
+    } catch (error) {
+      res.status(500).json({ message: error });
+    }
+  },
 };
 
 export default authController;
