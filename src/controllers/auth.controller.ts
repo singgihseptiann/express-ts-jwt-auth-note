@@ -24,10 +24,12 @@ const authController = {
 
   getUserController: async (req: Request, res: Response) => {
     try {
-      const userId = req.params.id; // Ambil ID dari parameter URL
+      console.log(`Fetching user with ID: ${req.params.id}`); // Tambahkan logging
+      const userId = req.params.id;
       const user = await authService.getUser(userId);
       res.status(200).json(user);
     } catch (error) {
+      console.error(`Error getting user: ${error}`); // Tambahkan logging
       res.status(500).json({ message: error });
     }
   },
